@@ -7,7 +7,7 @@
   font-family: "Lato", sans-serif;
 }
 
-.home,
+/* .home,
 .reports,
 .products {
   display: flex;
@@ -17,7 +17,7 @@
   font-size: 3rem;
   background-color: #000;
   color: #fff;
-}
+} */
 
 /* Navbar CSS */
 .navbar {
@@ -94,3 +94,7 @@
 span {
   margin-left: 16px;
 }
+
+/* .folders {
+  background:#47b83e;
+} */
