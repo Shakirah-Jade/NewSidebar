@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
-
+// import * as RiIcons from "react-icons/ri";
+import * as RiIcons from "react-icons/ri";
 export const SidebarData = [
+  {
+    title: "NewFolder",
+    path: "/newfolder",
+    icon: <AiIcons.AiFillFolder />,
+    cName: "nav-text",
+  
+  },
   {
     title: "Home",
     path: "/",
@@ -11,46 +19,34 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "FileShare",
-    path: "/fileshare",
+    title: "Trash",
+    path: "/trash",
     icon: <FaIcons.FaFile />,
     cName: "nav-text",
   },
+
+  ///////////////////////////////////
   {
-    title: "Inbox",
-    path: "/inbox",
-    icon: <FaIcons.FaInbox />,
+    title: "Folders",
+    path: "/folders",
+    icon: <AiIcons.AiFillFolder />,
     cName: "nav-text",
-  },
-  {
-    title: "Sent",
-    path: "/sent",
-    icon: <IoIcons.IoMdSend />,
+    iconClosed: <RiIcons.RiArrowDownFill />,
+    iconOpen: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+     title: "ICT Department",
+    path: "/folders/ict",
+    icon: <IoIcons.IoIosPaper />,
     cName: "nav-text",
-  },
-  {
-    title: "Drafts",
-    path: "/drafts",
-    icon: <FaIcons.FaDraftingCompass />,
-    cName: "nav-text",
-  },
-  {
-    title: "Archieve",
-    path: "/archieve",
-    icon: <IoIcons.IoMdArchive />,
-    cName: "nav-text",
-  },
-  {
-    title: "Team",
-    path: "/team",
-    icon: <IoIcons.IoMdPeople />,
-    cName: "nav-text",
-  },
-  {
-    title: "Messages",
-    path: "/messages",
-    icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: "nav-text",
+      },
+      {
+        title: "RISK Department",
+       path: "/folders/risk",
+       icon: <IoIcons.IoIosPaper />,
+       cName: "nav-text",
+         },
+    ]
   },
   {
     title: "Support",
