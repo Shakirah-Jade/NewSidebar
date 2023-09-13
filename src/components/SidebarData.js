@@ -21,7 +21,7 @@ export const SidebarData = [
   {
     title: "Trash",
     path: "/trash",
-    icon: <FaIcons.FaFile />,
+    icon: <FaIcons.FaTrash />,
     cName: "nav-text",
   },
 
