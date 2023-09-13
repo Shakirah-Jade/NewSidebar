@@ -8,14 +8,11 @@ import {
   Outlet,
   createRoutesFromElements,
 } from "react-router-dom";
-import FileShare from "./routes/FileShare";
 import Home from "./routes/Home";
-import Inbox from "./routes/Inbox";
-import Sent from "./routes/Sent";
-import Drafts from "./routes/Drafts";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import Archieve from "./routes/Archieve";
+import Trash from "./routes/Trash";
+import Folders from "./routes/Folders";
 
 const AppLayout = () => (
   <>
@@ -43,25 +40,14 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "fileshare",
-        element: <FileShare />,
+        path: "trash",
+        element: <Trash />
       },
       {
-        path: "inbox",
-        element: <Inbox />,
+        path: "folders",
+        element: <Folders />,
       },
-      // {
-      //   path: "sent",
-      //   element: <Sent />,
-      // },
-      {
-        path: "drafts",
-        element: <Drafts />,
-      },
-      {
-        path: "archieve",
-        element: <Archieve />,
-      },
+      
     ],
   },
 ]);
